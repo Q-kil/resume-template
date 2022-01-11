@@ -8,13 +8,36 @@
   <title>resume</title>
   <style>
     #app {
-      padding: 90px 0;
+      padding-bottom: 90px;
     }
     #app .avatar {
       width: 50px;
     }
     #app .app-table {
       margin: 0 auto;
+    }
+    #export {
+      height: 90px;
+      width: 1002px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #export a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+    }
+    #export .export-box {
+      height: 90px;
+      float: right;
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      cursor: pointer;
+    }
+    #export .export-box span {
+      margin-left: 2px;
     }
 
     html,
@@ -439,6 +462,14 @@
 
 <body>
   <div id="app">
+    <div id="export">
+      <a href="./files/test.pdf" target="_blank">
+        <div class="export-box">
+          <img src="./images/export.png" alt="">
+          <span>导出PDF或打印</span>
+        </div>
+      </a>
+    </div>
     <table cellpadding="0" cellspacing="0" class="column app-table">
       <tbody>
         <tr>
@@ -461,7 +492,7 @@
                             <p>
                               <img class="vam" src="./images/y4.png" width="20"
                                 height="20">男<span class="p5">|</span>**岁<span
-                                class="p5">|</span>本科<span class="p5">|</span>*年工作经验 <span class="p5">|</span><img class="vam" src="./images/y2.png" width="20"
+                                class="p5">|</span>本科·计算机科学与技术<span class="p5">|</span>*年工作经验 <span class="p5">|</span><img class="vam" src="./images/y2.png" width="20"
                                 height="20">132 **** 3218</p>
                           </td>
                         </tr>
